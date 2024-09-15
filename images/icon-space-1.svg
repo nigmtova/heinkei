@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="19px" viewBox="0 0 30 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-space</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-space" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M15,16.048 L3.706,9.375 L15,2.702 L26.293,9.375 L15,16.048 Z M29.386,8.299 L15.636,0.174 C15.242,-0.058 14.756,-0.058 14.364,0.174 L0.614,8.299 C0.233,8.523 0,8.933 0,9.375 C0,9.817 0.233,10.226 0.614,10.451 L14.364,18.576 C14.56,18.692 14.779,18.75 15,18.75 C15.22,18.75 15.439,18.692 15.636,18.576 L29.386,10.451 C29.766,10.226 30,9.817 30,9.375 C30,8.933 29.766,8.523 29.386,8.299 L29.386,8.299 Z" id="Fill-1"></path>
+        </g>
+    </g>
+</svg>
