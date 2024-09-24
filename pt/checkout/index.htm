@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/checkout.css" />
+    <link rel="stylesheet" href="/calendar.css">
     <title>Document</title>
   </head>
 
@@ -42,7 +43,7 @@
                   </div>
                 </li>
               </ul>
-              <div onclick="langePagess()" class="css-pd2080">
+              <div class="css-pd2080">
                 <span class="css-1hffiq1">
                   <div>Português</div>
                   <svg
@@ -191,10 +192,10 @@
                           ></path>
                         </svg></button
                       ><input disabled="true"
-                        id="inputs_01"
-                        type="text"
-                        class="css-11nlt7b"
-                        value="1"
+                          type="text"
+                          class="css-11nlt7b"
+                          id="inputs_01"
+                          value="1"
                       /><button onclick="plussBtn()" class="css-1o2mfsl">
                         <svg width="1em" height="1em" viewBox="0 0 100 100">
                           <path
@@ -208,7 +209,7 @@
                   </div>
                 </div>
                 <div class="css-1cdby4x">
-                  <div class="css-ypjt16">
+                  <div class="css-ypjt16" onclick="calenadry()">
                     <div class="css-gv637c">
                       <svg
                         width="1em"
@@ -228,6 +229,7 @@
                         class="flatpickr-input"
                         value="2024-10-08"
                       /><input
+                        id="caLendar"
                         class="form-control input"
                         placeholder="Seleciona uma data"
                         tabindex="0"
@@ -253,7 +255,7 @@
                   </div>
                 </div>
                 <div class="css-1cdby4x">
-                  <button
+                  <button onclick="vistPage()"
                     class="css-1f0p3fd"
                     data-gtm="button"
                     style="--x: 168.82635498046875px; --y: 77.68401336669922px"
@@ -265,8 +267,18 @@
                   </button>
                 </div>
               </div>
+              <div id="calendar_card" class="calendar_card">
+                <div id="aylantirish">
+                    <span id="aylantirish1"><i class='bx bx-chevron-right bx-flip-horizontal' ></i></span>
+                    <span id="aylantirish2"><i class='bx bx-chevron-right'></i></span>
+                  </div>
+                  <div class="for_flex_calendar">
+                      <div id="calendar1" class="calendar"></div>
+                      <div id="calendar2" class="calendar"></div>
+                    </div>
+                </div>
             </div>
-            <div class="css-1th8wul">
+            <div class="css-1th8wul" >
               <div class="css-36mw94">
                 <div class="css-1i82ydo">
                   <p class="fw-bold text-gray-600">Adultos (18+)</p>
@@ -559,7 +571,7 @@
                             >
                           </div>
                           <a
-                            href="https://tickets.heinekenexperience.com/pt/tickets/regular/1-0-0-0/2024-10-08"
+                            href="/pt/time/index.html"
                             class="css-si32mj"
                             data-gtm="button"
                             ><span>Reserva esta visita</span></a
@@ -765,7 +777,7 @@
                             >
                           </div>
                           <a
-                            href="https://tickets.heinekenexperience.com/pt/tickets/combi/1/2024-10-08"
+                            href="/pt/time/index.html"
                             class="css-si32mj"
                             data-gtm="button"
                             ><span>Reserva esta visita</span></a
@@ -1017,7 +1029,7 @@
                             >
                           </div>
                           <a
-                            href="https://tickets.heinekenexperience.com/pt/tickets/tpm/1/2024-10-08"
+                            href="/pt/time/index.html"
                             class="css-si32mj"
                             data-gtm="button"
                             ><span>Reserva esta visita</span></a
@@ -1264,7 +1276,7 @@
                                 ><span>€ 27, <sup>50</sup></span></span
                               >
                             </div>
-                            <a href="#" class="css-si32mj" data-gtm="button"
+                            <a href="/pt/time/index.html" class="css-si32mj" data-gtm="button"
                               ><span>Reserva esta visita</span></a
                             >
                           </div>
@@ -1712,11 +1724,7 @@
                   data-nimg="1"
                   class="SiteFooter_logo__3k4YD"
                   style="color: transparent"
-                  srcset="
-                    /_next/image/?url=https%3A%2F%2Fheigishnkexpepazwesta1.blob.core.windows.net%2Fmedia%2FEXPERIENCE_1_B_RGB_154x90_RH6dbHW.png&amp;w=256&amp;q=75 1x,
-                    /_next/image/?url=https%3A%2F%2Fheigishnkexpepazwesta1.blob.core.windows.net%2Fmedia%2FEXPERIENCE_1_B_RGB_154x90_RH6dbHW.png&amp;w=384&amp;q=75 2x
-                  "
-                  src="/_next/image/?url=https%3A%2F%2Fheigishnkexpepazwesta1.blob.core.windows.net%2Fmedia%2FEXPERIENCE_1_B_RGB_154x90_RH6dbHW.png&amp;w=384&amp;q=75"
+                  src="/_next/image/EVENTS_2_B_RGB_154x90px_i9sB80w-1.png"
               /></a>
               <nav class="SiteFooter_nav__Cc3LI">
                 <div class="SiteFooter_navCol__rbuOq">
@@ -1821,5 +1829,6 @@
     </div>
 
     <script src="/mains.js"></script>
+    <script src="/calendar.js"></script>
   </body>
 </html>

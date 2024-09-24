@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/time.css" />
+    <link rel="stylesheet" href="/calendar.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="time_container">
+        <div class="qoraa" onclick="Qoraa()"></div>
+        <header class="site-header">
+          <a class="logo" href="/es/index.htm"></a>
+          <ul class="steps">
+            <li class="done">
+              <div>
+                <a href="/es/checkout/index.htm" class="item">
+                  <span class="circle">1</span>
+                  <span class="text">Selecciona la visita</span>
+                </a>
+              </div>
+            </li>
+            <li class="active">
+              <div>
+                <a href="#" class="item">
+                  <span class="circle">2</span>
+                  <span class="text">Selecciona la hora</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="#" class="item">
+                  <span class="circle">3</span>
+                  <span class="text">Datos personales</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="#" class="item">
+                  <span class="circle">4</span>
+                  <span class="text">Pago</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+    
+          <div class="language-selector">
+            <div class="active-language">
+              Español                   <svg
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 20 20"
+                    class="css-cs6kbr"
+                  >
+                    <path
+                      d="M10.014 0c5.559.008 10.002 4.513 9.983 10.043-.02 5.588-4.634 10.059-10.194 9.955C4.459 19.898 0 15.52 0 10.01-.008 4.533 4.41-.008 10.014 0zm-1.47.951c-.107.015-.167.055-.183.17-.053.386-.12.768-.167 1.154-.012.094-.04.144-.122.189-.47.249-.927.521-1.405.752-.325.157-.57.366-.693.707-.079.222-.241.326-.463.38-.095.023-.139.004-.188-.07l-.425-.611c-.028-.042-.063-.1-.054-.143.06-.28.118-.562.201-.836.046-.151.138-.288.21-.431l-.06-.053c-.442.344-.884.686-1.32 1.037-.033.025-.038.116-.022.166.119.377.233.756.375 1.125.09.232.105.42-.102.596-.098.083-.158.209-.252.297a.594.594 0 01-.247.146c-.28.07-.563.123-.87.187.1.089.177.16.256.229.277.24.267.236.148.588-.054.16-.142.23-.299.235-.566.02-1.045.218-1.432.65-.181.202-.349.393-.388.673-.03.216-.08.429-.112.645a9.074 9.074 0 00.1 3.138c.023.112.075.155.175.185.333.1.665.204.994.319a.407.407 0 01.196.153c.174.274.332.558.504.833.041.066.106.13.174.164.598.296 1.198.586 1.799.877.278.134.349.39.188.658-.203.338-.417.671-.589 1.025-.139.286-.16.633-.488.805 2.653 2.376 6.85 3.103 10.42 1.135 3.608-1.988 4.897-5.668 4.73-8.326l-.117-.025c-.034-.007-.069-.017-.104-.019-.49-.03-.954-.147-1.374-.412-.025-.015-.056-.023-.078-.041-.179-.14-.335-.06-.47.022.15.165.292.33.446.486.031.03.115.045.155.026.256-.121.46.01.661.13.202.12.217.354.049.514-.21.2-.418.402-.63.6a.408.408 0 01-.159.106c-.284.073-.57.135-.855.2l-.16-.272-.242-.417c-.246-.413-.514-.808-.921-1.103-.218-.157-.217-.177-.396.052l.292.524c.1.18.222.353.296.544.172.447.478.734.927.896.145.052.264.084.417.037.102-.03.224.001.379.007-.228.435-.341.854-.71 1.134-.29.22-.554.479-.822.729a.492.492 0 00-.137.234l-.291 1.33a.386.386 0 01-.146.226c-.355.218-.589.533-.783.892-.133.243-.261.501-.448.699-.379.398-.795.76-1.198 1.134-.089.083-.417.053-.461-.05-.194-.451-.485-.855-.55-1.37-.068-.537-.154-1.059.132-1.561a.232.232 0 00.002-.185c-.21-.454-.242-.945-.312-1.43a.855.855 0 00-.216-.495c-.22-.242-.438-.264-.733-.193a5.262 5.262 0 01-.961.117c-.204.01-.412-.032-.616-.065a.376.376 0 01-.207-.108 24.34 24.34 0 01-.7-.824.528.528 0 01-.111-.233c-.048-.28-.071-.563-.123-.841-.023-.122.01-.2.087-.284.526-.57 1.028-1.157 1.365-1.867.03-.063.112-.12.182-.14.287-.09.578-.165.868-.245.12-.033.237-.084.358-.094.127-.01.258.02.388.029.488.035.488.035.737.465.032.056.061.115.099.167.026.037.06.083.098.094l.198.06c.264.079.528.133.791-.071.216-.168.449-.157.693-.051.123.053.262.105.391.1.27-.012.54-.06.809-.1.033-.005.08-.037.09-.067.066-.186.124-.374.192-.583-.33-.021-.623-.046-.918-.057-.18-.006-.312-.056-.372-.246a.995.995 0 00-.147-.282c-.028-.038-.107-.07-.15-.057-.043.012-.095.08-.1.128-.012.144-.004.29-.004.435-.217-.014-.355-.098-.436-.293-.077-.185-.202-.35-.28-.534-.1-.24-.302-.34-.539-.456.073.27.143.512.203.757.013.054.007.135-.025.173-.07.082-.164.144-.261.226-.075-.263-.14-.508-.218-.748a.237.237 0 00-.132-.133c-.207-.068-.424-.108-.629-.181-.146-.052-.224-.013-.306.108-.229.335-.467.646-.858.838-.289.142-.537.089-.806.05v-.872c.189-.038.366-.093.546-.104.173-.01.252-.128.364-.222.173-.144.038-.274.003-.408a.828.828 0 00-.07-.181c-.058-.11-.034-.178.074-.246.275-.173.551-.347.809-.544.214-.164.445-.222.706-.227.242-.004.49-.006.724-.057.178-.039.362-.127.5-.244.063-.054.036-.234.021-.353-.018-.139.026-.22.146-.284.112-.061.215-.14.354-.234l-.856-.18c.07-.246.115-.475.201-.686.082-.201.004-.317-.148-.432-.113.123-.213.249-.33.356-.113.101-.136.21-.13.36.014.423.004.847.004 1.277-.109 0-.214-.004-.318.002-.1.006-.139-.032-.172-.129a.7.7 0 00-.184-.287c-.158-.14-.334-.26-.508-.382-.122-.087-.253-.163-.383-.245.36-.521.735-1.005 1.043-1.528.207-.35.445-.498.847-.445.168.023.315.044.457.146.277.2.57.38.847.582.103.074.177.188.282.303l-.368.139c.139.122.26.233.388.337.026.021.09.037.107.022.135-.114.263-.237.446-.404.506.055.985.398 1.528.568a7.273 7.273 0 00-.483-.416C13.562 1.185 11.182.577 8.545.95zm7.99 13.519c.041.237.107.464-.065.678a.89.89 0 00-.132.23c-.163.408-.557.55-.872.793v-.406l.001-.19c0-.039.01-.084.031-.115.278-.394.605-.736 1.037-.99zM4.594 5.097c-.012.399.277.733.021 1.108-.108-.035-.214-.066-.318-.103-.076-.027-.198-.044-.215-.094-.042-.125-.04-.265-.048-.4-.001-.021.028-.049.05-.067.154-.136.31-.27.51-.444zm4.868-.85c.35.045.49.138.643.426.08.15.157.303.234.455.047.092.05.168-.046.242a1.996 1.996 0 00-.295.28c-.121.141-.277.156-.499.165.22-.39.161-.749.03-1.114-.051-.14-.046-.301-.067-.455zm-.32.528l.36.161c-.144.31-.144.31-.537.264l.177-.425zm-.26-1.477c.054.335.054.335-.244.456-.06.024-.127.04-.179.075-.182.126-.333-.005-.436-.1-.06-.056-.015-.239.006-.36.005-.032.098-.066.152-.068.229-.007.459-.003.7-.003z"
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
+            </div>
+            <div class="languages-selection">
+              <ul class="languages">
+                <li><a href="/en/time/index.html">English</a></li>
+                <li><a href="/nl/time/index.html">Nederlands</a></li>
+                <li><a href="/de/time/index.html">Deutsch</a></li>
+                <li><a href="/fr/time/index.html">Français</a></li>
+                <li><a href="/es/time/index.html">Español</a></li>
+                <li><a href="/it/time/index.html">Italiano</a></li>
+                <li><a href="/pt/time/index.html">Português</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <div class="main">
+          <div class="page-title">
+            <div class="page-wrapper">
+              <h1>¿A qué hora te gustaría visitar la Heineken Experience?</h1>
+              <p>Comprueba las horas disponibles</p>
+            </div>
+          </div>
+          <form method="post" action="/en/personal-details/regular">
+            <div class="page-content">
+              <h2>Heineken<span class="super">®</span> tour</h2>
+              <section id="ticket-selection" style="display: none">
+                <div
+                  class="error-container"
+                  id="no-tickets-selected"
+                  style="display: none"
+                >
+                  <p>No tickets selected</p>
+                </div>
+                <div class="table-container" id="regular-tickets">
+                  <div class="row">
+                    <div class="col description">
+                      <span class="type">Adult</span>
+                      <span class="price">€ 23.00</span>
+                    </div>
+                    <div class="col amount">
+                      <div class="control-container">
+                        <a href="#" class="control minus">
+                          <span class="horizontal"></span>
+                        </a>
+                        <input
+                          type="number"
+                          min="0"
+                          max="25"
+                          value="1"
+                          data-min-tickets="1"
+                          class="text-field"
+                          data-price="23"
+                          data-price2018="21"
+                          data-price2019="21"
+                          name="tickets[adult]"
+                          id="adult"
+                        />
+                        <a href="#" class="control plus">
+                          <span class="horizontal"></span>
+                          <span class="vertical"></span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="last-row">
+                    <div class="col description">
+                      <span class="type">Total</span>
+                    </div>
+                    <div class="col amount">
+                      <span id="total-price">€23.00</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="notranslate">
+                <input
+                  type="hidden"
+                  name="pageType"
+                  value="regular"
+                  id="ticketType"
+                />
+                <div style="cursor: pointer;" class="datepicker-input" onclick="calenadry()">
+                  <span class="date-text" id="selected-date-text">
+                    <input id="caLendar2" class="value" type="text" disabled="" value="01-10-2024">
+                    <span class="icon calendars"><i class='bx bx-calendar-alt'></i></span
+                  ></span>
+                  <div id="calendar_card" class="calendar_card">
+                      <div id="aylantirish">
+                          <span id="aylantirish1"><i class='bx bx-chevron-right bx-flip-horizontal' ></i></span>
+                          <span id="aylantirish2"><i class='bx bx-chevron-right'></i></span>
+                        </div>
+                        <div class="for_flex_calendar">
+                            <div id="calendar1" class="calendar"></div>
+                            <div id="calendar2" class="calendar"></div>
+                          </div>
+                      </div>
+                </div>
+                <input type="hidden" name="hidden-time" id="hidden-time" />
+                <input
+                  type="hidden"
+                  name="date_regular"
+                  id="hidden-date"
+                  value="2024-10-01"
+                />
+              </section>
+  
+              <section style="margin: 0 0 30px">
+                <div class="text-container">
+                  <div id="valentine-text" style="display: none">
+                    <span class="discount-indicator valentine"></span>
+                    <span
+                      >Happy Valentine’s Day! Book your Heineken tour via
+                      <a href="/voucher/en/VALENTINE24">this link</a> and use the
+                      special code: VALENTINE24 to get 1+1 free.</span
+                    >
+                  </div>
+                  <div id="rooftop2-text" style="display: none">
+                    <span class="discount-indicator rooftop2"></span>
+                    <span
+                      >Rooftop Wednesdays. Book your Heineken tour including
+                      Rooftop access via
+                      <a href="/voucher/en/ROOFTOPWEDNESDAYS">this link</a> and
+                      use the special code: ROOFTOPWEDNESDAYS to get 1+1 free on
+                      selected timeslots.</span
+                    >
+                  </div>
+                </div>
+              </section>
+  
+              <section id="timeslots" class="notranslate">
+                <div class="loading-container" style="display: none">
+                  <img
+                    src="/static_new/images/dark.gif"
+                    alt="Timeslots are loading"
+                  />
+                </div>
+                <div class="timeslots-container">
+                  <div class="item" onclick="adulto('10:30')">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1030"
+                      value="10:30"
+                    />
+                    <label for="time-regular-1030" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">10:30</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('10:45')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1045"
+                      value="10:45"
+                    />
+                    <label for="time-regular-1045" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">10:45</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('11:00')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1100"
+                      value="11:00"
+                    />
+                    <label for="time-regular-1100" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">11:00</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('11:15')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1115"
+                      value="11:15"
+                    />
+                    <label for="time-regular-1115" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">11:15</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('11:30')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1130"
+                      value="11:30"
+                    />
+                    <label for="time-regular-1130" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">11:30</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('11:45')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1145"
+                      value="11:45"
+                    />
+                    <label for="time-regular-1145" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">11:45</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('12:00')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1200"
+                      value="12:00"
+                    />
+                    <label for="time-regular-1200" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">12:00</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('12:15')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1215"
+                      value="12:15"
+                    />
+                    <label for="time-regular-1215" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">12:15</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('12:30')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1230"
+                      value="12:30"
+                    />
+                    <label for="time-regular-1230" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">12:30</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('12:45')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1245"
+                      value="12:45"
+                    />
+                    <label for="time-regular-1245" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">12:45</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('13:00')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1300"
+                      value="13:00"
+                    />
+                    <label for="time-regular-1300" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">13:00</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('13:15')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1315"
+                      value="13:15"
+                    />
+                    <label for="time-regular-1315" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">13:15</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('13:30')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1330"
+                      value="13:30"
+                    />
+                    <label for="time-regular-1330" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">13:30</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('13:45')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1345"
+                      value="13:45"
+                    />
+                    <label for="time-regular-1345" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">13:45</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('14:00')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1400"
+                      value="14:00"
+                    />
+                    <label for="time-regular-1400" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">14:00</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('14:15')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1415"
+                      value="14:15"
+                    />
+                    <label for="time-regular-1415" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">14:15</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('14:30')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1430"
+                      value="14:30"
+                    />
+                    <label for="time-regular-1430" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">14:30</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('14:45')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1445"
+                      value="14:45"
+                    />
+                    <label for="time-regular-1445" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">14:45</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('15:00')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1500"
+                      value="15:00"
+                    />
+                    <label for="time-regular-1500" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">15:00</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('15:15')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1515"
+                      value="15:15"
+                    />
+                    <label for="time-regular-1515" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">15:15</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('15:30')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1530"
+                      value="15:30"
+                    />
+                    <label for="time-regular-1530" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">15:30</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('15:45')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1545"
+                      value="15:45"
+                    />
+                    <label for="time-regular-1545" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">15:45</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('16:00')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1600"
+                      value="16:00"
+                    />
+                    <label for="time-regular-1600" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">16:00</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('16:15')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1615"
+                      value="16:15"
+                    />
+                    <label for="time-regular-1615" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">16:15</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('16:30')" class="item">
+                    <input 
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1630"
+                      value="16:30"
+                    />
+                    <label for="time-regular-1630" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">16:30</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('16:45')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1645"
+                      value="16:45"
+                    />
+                    <label for="time-regular-1645" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">16:45</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('17:00')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1700"
+                      value="17:00"
+                    />
+                    <label for="time-regular-1700" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">17:00</span>
+                    </label>
+                  </div>
+                  <div onclick="adulto('17:15')" class="item">
+                    <input
+                      name="time_regular"
+                      type="radio"
+                      id="time-regular-1715"
+                      value="17:15"
+                    />
+                    <label for="time-regular-1715" class="green">
+                      <span class="icon checkmark"><i class='bx bx-check'></i></span>
+                      <span class="time">17:15</span>
+                    </label>
+                  </div>
+                </div>
+              </section>
+  
+              <section>
+                <div class="reference-container">
+                  <span class="reference"
+                    ><span class="indicator green"></span
+                    ><span>Entradas disponibles</span></span
+                  >
+                  <span class="reference"
+                    ><span class="indicator orange"></span
+                    ><span>Algunas entradas disponibles</span></span
+                  >
+                  <span class="reference"
+                    ><span class="indicator gray"></span
+                    ><span>No hay entradas disponibles</span></span
+                  >
+                  <span class="reference discount" id="gift-indicator"
+                    ><span class="discount-indicator">Gift</span>Get a free
+                    opener</span
+                  >
+                  <span class="reference discount" id="percentage-indicator"
+                    ><span class="discount-indicator">%</span
+                    ><span>Discount</span>
+                  </span>
+                </div>
+                <div class="text-container">
+                  <div id="australia-text" style="display: none">
+                    <span class="discount-indicator australia"></span>
+                    <span
+                      >On January 26th - Australia Day, we will donate
+                      <span class="spacetext">€2.5</span><br />for each ticket
+                      bought to help Australia’s wildfire recovery</span
+                    >
+                  </div>
+                  <div id="valentine-text" style="display: none">
+                    <span class="discount-indicator valentine"></span>
+                    <span
+                      >Happy Valentine’s Day! Book your Heineken tour via
+                      <a href="/voucher/en/VALENTINE24">this link</a> and use the
+                      special code: VALENTINE24 to get 1+1 free.</span
+                    >
+                  </div>
+                  <div id="rooftop2-text" style="display: none">
+                    <span class="discount-indicator rooftop2"></span>
+                    <span
+                      >Rooftop Wednesdays. Book your Heineken tour including
+                      Rooftop access via
+                      <a href="/voucher/en/ROOFTOPWEDNESDAYS">this link</a> and
+                      use the special code: ROOFTOPWEDNESDAYS to get 1+1 free on
+                      selected timeslots.</span
+                    >
+                  </div>
+                </div>
+  
+                <div
+                  class="error-container"
+                  id="no-timeslots-available"
+                  style="display: none"
+                >
+                  <p>No timeslots available</p>
+                </div>
+              </section>
+              <section>
+                <button type="submit" id="next-button" disabled="">
+                  Continuar a los datos personales
+                </button>
+              </section>
+            </div>
+  
+            <a
+              href="/en/checkout/index.htm"
+              id="previous-button"
+              >Paso anterior</a
+            >
+          </form>
+        </div>
+      <footer class="site-footer">
+        <div class="top">
+          <div class="wrap">
+            <div class="footer-table">
+              <div class="cell" id="footer-logo">
+                <a href="#"
+                  ><img
+                    src="/_next/image/EXPERIENCE_1_B_RGB_154x90_RH6dbHW-11.png"
+                    alt="Heineken Experience"
+                /></a>
+              </div>
+              <div class="cell">
+                <nav>
+                  <ul>
+                    <li>
+                      <a href="/en/faqs/index.htm"
+                        >FAQ</a
+                      >
+                    </li>
+                    <!-- class="faq-button" id="faq-button"-->
+                    <!--<li><a href="/en/about/">About the Experience</a></li>
+                                    <li><a href="/en/discover-our-tours/">Discover our tours</a></li>-->
+                    <li>
+                      <a
+                        href="/en/service-and-contact/index.htm"
+                        >Service &amp; Contact</a
+                      >
+                    </li>
+                    <!--<li><a href="/en/meeting-events/">Meeting &amp; Events</a></li>-->
+                  </ul>
+
+                  <ul>
+                    <!--<li><a href="/en/privacy-policy/">Cookie Settings</a></li>-->
+                    <li>
+                      <a
+                        href="/en/privacy-policy/index.htm"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/en/cookie-policy/index.htm"
+                        >Cookie Policy</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/en/terms-and-conditions/index.htm"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Terms &amp; Conditions</a
+                      >
+                    </li>
+                    <li>
+                      <a href="/es/index.htm"
+                        >Heineken Company</a
+                      >
+                    </li>
+                  </ul>
+
+                  <div class="socialmedia-container">
+                    <h4>Follow us</h4>
+                    <!--<button>
+                                        <span>
+                                            <svg width="1em" height="1em" viewBox="0 0 30 30"><path d="M10.548 24.2c9.056 0 14.01-7.388 14.01-13.793 0-.21 0-.42-.014-.628A9.917 9.917 0 0027 7.27a9.928 9.928 0 01-2.827.764 4.884 4.884 0 002.165-2.682 9.963 9.963 0 01-3.128 1.177c-1.864-1.952-4.983-2.046-6.967-.21a4.807 4.807 0 00-1.424 4.632C10.86 10.754 7.17 8.913 4.67 5.885c-1.306 2.215-.638 5.048 1.526 6.47a4.946 4.946 0 01-2.236-.605v.061c.001 2.308 1.654 4.295 3.95 4.752a4.973 4.973 0 01-2.222.083c.644 1.975 2.494 3.328 4.6 3.367A9.978 9.978 0 013 22.023a14.104 14.104 0 007.548 2.173" fill="#BBBCBD" fill-rule="evenodd"></path></svg>
+                                        </span>
+                                    </button>-->
+                    <a
+                      href="https://www.instagram.com/heinekenexperience/"
+                      target="_blank"
+                    >
+                      <button>
+                        <span>
+                          <svg width="1em" height="1em" viewBox="0 0 30 30">
+                            <path
+                              d="M10.044 3.147c-1.954.088-3.647.566-5.014 1.927-1.372 1.369-1.844 3.069-1.932 5.002-.055 1.206-.376 10.322.555 12.712a6.049 6.049 0 003.493 3.483c.759.295 1.626.496 2.898.554 10.633.481 14.574.22 16.236-4.037.295-.757.498-1.623.554-2.892.486-10.66-.079-12.97-1.932-14.822-1.47-1.466-3.199-2.464-14.858-1.927m.097 21.534c-1.164-.052-1.795-.247-2.217-.41a3.906 3.906 0 01-2.266-2.26c-.71-1.816-.474-10.443-.41-11.839.061-1.367.338-2.617 1.303-3.581C7.745 5.4 9.288 4.816 19.791 5.29c1.372.062 2.624.338 3.591 1.3 1.194 1.192 1.787 2.746 1.304 13.21-.052 1.161-.247 1.791-.41 2.212-1.081 2.769-3.567 3.154-14.135 2.669m9.767-16.054a1.432 1.432 0 002.867 0c0-.788-.643-1.429-1.435-1.429-.791 0-1.432.641-1.432 1.43M8.835 14.985c0 3.377 2.745 6.116 6.132 6.116 3.386 0 6.131-2.739 6.131-6.116 0-3.378-2.745-6.116-6.131-6.116-3.387 0-6.132 2.738-6.132 6.116m2.152 0a3.975 3.975 0 013.98-3.97 3.975 3.975 0 013.98 3.97 3.975 3.975 0 01-3.98 3.97 3.975 3.975 0 01-3.98-3.97"
+                              fill="#BBBCBD"
+                              fill-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </a>
+                    <a
+                      href="https://www.facebook.com/heinekenexperience"
+                      target="_blank"
+                    >
+                      <button>
+                        <span>
+                          <svg width="1em" height="1em" viewBox="0 0 30 30">
+                            <path
+                              d="M17.186 27V16.2h3.278L21 11.4h-3.814V9.062c0-1.236.031-2.462 1.758-2.462h1.75V3.168c0-.052-1.503-.168-3.023-.168-3.175 0-5.163 1.988-5.163 5.64v2.76H9v4.8h3.508V27h4.678z"
+                              fill="#BBBCBD"
+                              fill-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </span>
+                      </button>
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="wrap">
+            <div class="copyright-container">© 2020 Copyright</div>
+
+            <div class="language-selector">
+              <div class="active-language">
+                English                   <svg
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 20 20"
+                    class="css-cs6kbr"
+                  >
+                    <path
+                      d="M10.014 0c5.559.008 10.002 4.513 9.983 10.043-.02 5.588-4.634 10.059-10.194 9.955C4.459 19.898 0 15.52 0 10.01-.008 4.533 4.41-.008 10.014 0zm-1.47.951c-.107.015-.167.055-.183.17-.053.386-.12.768-.167 1.154-.012.094-.04.144-.122.189-.47.249-.927.521-1.405.752-.325.157-.57.366-.693.707-.079.222-.241.326-.463.38-.095.023-.139.004-.188-.07l-.425-.611c-.028-.042-.063-.1-.054-.143.06-.28.118-.562.201-.836.046-.151.138-.288.21-.431l-.06-.053c-.442.344-.884.686-1.32 1.037-.033.025-.038.116-.022.166.119.377.233.756.375 1.125.09.232.105.42-.102.596-.098.083-.158.209-.252.297a.594.594 0 01-.247.146c-.28.07-.563.123-.87.187.1.089.177.16.256.229.277.24.267.236.148.588-.054.16-.142.23-.299.235-.566.02-1.045.218-1.432.65-.181.202-.349.393-.388.673-.03.216-.08.429-.112.645a9.074 9.074 0 00.1 3.138c.023.112.075.155.175.185.333.1.665.204.994.319a.407.407 0 01.196.153c.174.274.332.558.504.833.041.066.106.13.174.164.598.296 1.198.586 1.799.877.278.134.349.39.188.658-.203.338-.417.671-.589 1.025-.139.286-.16.633-.488.805 2.653 2.376 6.85 3.103 10.42 1.135 3.608-1.988 4.897-5.668 4.73-8.326l-.117-.025c-.034-.007-.069-.017-.104-.019-.49-.03-.954-.147-1.374-.412-.025-.015-.056-.023-.078-.041-.179-.14-.335-.06-.47.022.15.165.292.33.446.486.031.03.115.045.155.026.256-.121.46.01.661.13.202.12.217.354.049.514-.21.2-.418.402-.63.6a.408.408 0 01-.159.106c-.284.073-.57.135-.855.2l-.16-.272-.242-.417c-.246-.413-.514-.808-.921-1.103-.218-.157-.217-.177-.396.052l.292.524c.1.18.222.353.296.544.172.447.478.734.927.896.145.052.264.084.417.037.102-.03.224.001.379.007-.228.435-.341.854-.71 1.134-.29.22-.554.479-.822.729a.492.492 0 00-.137.234l-.291 1.33a.386.386 0 01-.146.226c-.355.218-.589.533-.783.892-.133.243-.261.501-.448.699-.379.398-.795.76-1.198 1.134-.089.083-.417.053-.461-.05-.194-.451-.485-.855-.55-1.37-.068-.537-.154-1.059.132-1.561a.232.232 0 00.002-.185c-.21-.454-.242-.945-.312-1.43a.855.855 0 00-.216-.495c-.22-.242-.438-.264-.733-.193a5.262 5.262 0 01-.961.117c-.204.01-.412-.032-.616-.065a.376.376 0 01-.207-.108 24.34 24.34 0 01-.7-.824.528.528 0 01-.111-.233c-.048-.28-.071-.563-.123-.841-.023-.122.01-.2.087-.284.526-.57 1.028-1.157 1.365-1.867.03-.063.112-.12.182-.14.287-.09.578-.165.868-.245.12-.033.237-.084.358-.094.127-.01.258.02.388.029.488.035.488.035.737.465.032.056.061.115.099.167.026.037.06.083.098.094l.198.06c.264.079.528.133.791-.071.216-.168.449-.157.693-.051.123.053.262.105.391.1.27-.012.54-.06.809-.1.033-.005.08-.037.09-.067.066-.186.124-.374.192-.583-.33-.021-.623-.046-.918-.057-.18-.006-.312-.056-.372-.246a.995.995 0 00-.147-.282c-.028-.038-.107-.07-.15-.057-.043.012-.095.08-.1.128-.012.144-.004.29-.004.435-.217-.014-.355-.098-.436-.293-.077-.185-.202-.35-.28-.534-.1-.24-.302-.34-.539-.456.073.27.143.512.203.757.013.054.007.135-.025.173-.07.082-.164.144-.261.226-.075-.263-.14-.508-.218-.748a.237.237 0 00-.132-.133c-.207-.068-.424-.108-.629-.181-.146-.052-.224-.013-.306.108-.229.335-.467.646-.858.838-.289.142-.537.089-.806.05v-.872c.189-.038.366-.093.546-.104.173-.01.252-.128.364-.222.173-.144.038-.274.003-.408a.828.828 0 00-.07-.181c-.058-.11-.034-.178.074-.246.275-.173.551-.347.809-.544.214-.164.445-.222.706-.227.242-.004.49-.006.724-.057.178-.039.362-.127.5-.244.063-.054.036-.234.021-.353-.018-.139.026-.22.146-.284.112-.061.215-.14.354-.234l-.856-.18c.07-.246.115-.475.201-.686.082-.201.004-.317-.148-.432-.113.123-.213.249-.33.356-.113.101-.136.21-.13.36.014.423.004.847.004 1.277-.109 0-.214-.004-.318.002-.1.006-.139-.032-.172-.129a.7.7 0 00-.184-.287c-.158-.14-.334-.26-.508-.382-.122-.087-.253-.163-.383-.245.36-.521.735-1.005 1.043-1.528.207-.35.445-.498.847-.445.168.023.315.044.457.146.277.2.57.38.847.582.103.074.177.188.282.303l-.368.139c.139.122.26.233.388.337.026.021.09.037.107.022.135-.114.263-.237.446-.404.506.055.985.398 1.528.568a7.273 7.273 0 00-.483-.416C13.562 1.185 11.182.577 8.545.95zm7.99 13.519c.041.237.107.464-.065.678a.89.89 0 00-.132.23c-.163.408-.557.55-.872.793v-.406l.001-.19c0-.039.01-.084.031-.115.278-.394.605-.736 1.037-.99zM4.594 5.097c-.012.399.277.733.021 1.108-.108-.035-.214-.066-.318-.103-.076-.027-.198-.044-.215-.094-.042-.125-.04-.265-.048-.4-.001-.021.028-.049.05-.067.154-.136.31-.27.51-.444zm4.868-.85c.35.045.49.138.643.426.08.15.157.303.234.455.047.092.05.168-.046.242a1.996 1.996 0 00-.295.28c-.121.141-.277.156-.499.165.22-.39.161-.749.03-1.114-.051-.14-.046-.301-.067-.455zm-.32.528l.36.161c-.144.31-.144.31-.537.264l.177-.425zm-.26-1.477c.054.335.054.335-.244.456-.06.024-.127.04-.179.075-.182.126-.333-.005-.436-.1-.06-.056-.015-.239.006-.36.005-.032.098-.066.152-.068.229-.007.459-.003.7-.003z"
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
+              </div>
+              <div class="languages-selection">
+                <ul class="languages">
+                  <li><a href="/en/time/index.html">English</a></li>
+                  <li><a href="/nl/time/index.html">Nederlands</a></li>
+                  <li><a href="/de/time/index.html">Deutsch</a></li>
+                  <li><a href="/fr/time/index.html">Français</a></li>
+                  <li><a href="/es/time/index.html">Español</a></li>
+                  <li><a href="/it/time/index.html">Italiano</a></li>
+                  <li><a href="/pt/time/index.html">Português</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="/mains.js"></script>
+    <script src="/calendar2.js"></script>
+  </body>
+</html>

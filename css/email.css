@@ -1,0 +1,237 @@
+select {
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    -webkit-rtl-ordering: logical;
+    cursor: default;
+    white-space: pre;
+}
+
+@media (min-width: 768px) {
+    section {
+        margin: 0 0 60px;
+    }
+}
+
+.checkbox-container {
+    position: relative;
+    padding: 0 0 0 30px;
+    margin: 0 0 8px;
+    color: #999999;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+
+
+#personal-details-section > ul, #company-details-section > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#personal-details-section > ul > li, #company-details-section > ul > li {
+    margin: 10px 0 0;
+}
+
+@media (min-width: 768px) {
+    #personal-details-section > ul > li > *, #company-details-section > ul > li > * {
+        height: 70px;
+    }
+}
+
+#personal-details-section > ul > li > *, #company-details-section > ul > li > * {
+    height: 50px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #personal-details-section input, #company-details-section input {
+        line-height: 68px;
+    }
+}
+
+#personal-details-section input, #company-details-section input {
+    padding: 0 20px;
+    border: 1px solid #BBBCBD;
+    color: #999999;
+    font-size: 18px;
+    line-height: 48px;
+}
+
+@media (min-width: 768px) {
+    #personal-details-section > ul > li > *, #company-details-section > ul > li > * {
+        height: 70px;
+    }
+}
+
+@media (min-width: 768px) {
+    #personal-details-section > ul > li, #company-details-section > ul > li {
+        margin: 20px 0 0;
+    }
+}
+
+.selectbox {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #BBBCBD;
+}
+
+#personal-details-section > ul > li > *, #company-details-section > ul > li > * {
+    height: 50px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #personal-details-section > ul > li > *, #company-details-section > ul > li > * {
+        height: 70px;
+    }
+}
+
+@media (min-width: 768px) {
+    .selectbox .icon {
+        right: 20px;
+        font-size: 12px;
+        line-height: 68px;
+    }
+}
+
+.selectbox .icon {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #13670B;
+    font-size: 10px;
+    line-height: 48px;
+}
+
+[class^="icon"], [class*=" icon"] {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon.arrow-head-down:before {
+    content: "\e900";
+}
+
+@media (min-width: 768px) {
+    .selectbox .icon {
+        right: 20px;
+        font-size: 12px;
+        line-height: 68px;
+    }
+}
+
+.selectbox .icon {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #13670B;
+    font-size: 10px;
+    line-height: 48px;
+}
+
+.selectbox select {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    border: 0;
+    background: none;
+    color: #999999;
+    font-size: 16px;
+    line-height: 48px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button, select {
+    text-transform: none;
+}
+
+
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    #personal-details-section > ul > li, #company-details-section > ul > li {
+        margin: 20px 0 0;
+    }
+}
+
+.checkbox-container input {
+    display: none;
+}
+
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.checkbox-container .checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background: #FFF;
+    padding: 2px;
+    border: 1px solid #BBBCBD;
+}
+
+.checkbox-container .checkbox span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+}
+
+.checkbox-container :checked ~ label .checkbox span {
+    background: #13670B;
+}
+
+.checkbox-container a {
+    color: #A3A3A3;
+    font-family: "HeinekenSerif18-Bold";
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.checkbox-container {
+    position: relative;
+    padding: 0 0 0 30px;
+    margin: 0 0 8px;
+    color: #999999;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+
+.checkbox-container label {
+    cursor: pointer;
+}
+
+button, input {
+    overflow: visible;
+}
