@@ -750,6 +750,16 @@ button, input {
     -ms-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+#next-button a {
+    color: #FFF;
+    font-family: "HeinekenSerif18-Bold";
+    font-size: 18px;
+    line-height: 50px;
+    text-decoration: none;
 }
 
 button, [type="button"], [type="reset"], [type="submit"] {
