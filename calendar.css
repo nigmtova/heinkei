@@ -175,3 +175,31 @@
     justify-content: space-between;
     gap: 30px;
   }
+
+  .for_media_nav{
+    position: fixed;
+    top: 0;
+    right: -200vh;
+    background-color: hsl(115 19% 12%);
+    z-index: -1111;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    padding-top: 30px;
+    transition: .7s;
+  }
+
+  .for_icons i{
+    font-size: 35px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    right: -200vh;
+    transition: .7s;
+  }
+  
+  .hiddens{
+    overflow: hidden;
+    width: 100%;
+  }
