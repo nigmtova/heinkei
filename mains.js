@@ -4,7 +4,7 @@ var for_plus_1 = localStorage.getItem("Count1_1") || 1;
 
 function calenadry() {
   document.querySelector(".calendar_card").style = "display: block"
-  document.querySelector(".qoraa").style = "display: none;"
+  document.querySelector(".qoraa").style = "display: block;"
 }
 
 
@@ -53,3 +53,11 @@ function checkPage() {
   localStorage.setItem("selected_date", document.querySelector(".css-1s1z98e").value)
   localStorage.setItem("Count1_1", document.querySelector("#inputs_01").value)
 }
+
+
+document.getElementById('SiteHeader_navToggle__AE1Wf').onclick = function() {
+  var element = document.getElementById('mainmenulabel');
+  var element2 = document.getElementById('SiteHeader_navToggle__AE1Wf');
+  element.hidden = false; 
+  element.ariaExpanded = true; 
+};
