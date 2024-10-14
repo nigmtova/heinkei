@@ -40,16 +40,6 @@ select {
     margin: 10px 0 0;
 }
 
-@media (min-width: 768px) {
-    #personal-details-section > ul > li > *, #company-details-section > ul > li > * {
-        height: 70px;
-    }
-}
-
-#personal-details-section > ul > li > *, #company-details-section > ul > li > * {
-    height: 50px;
-    width: 100%;
-}
 
 @media (min-width: 768px) {
     #personal-details-section input, #company-details-section input {
@@ -65,11 +55,6 @@ select {
     line-height: 48px;
 }
 
-@media (min-width: 768px) {
-    #personal-details-section > ul > li > *, #company-details-section > ul > li > * {
-        height: 70px;
-    }
-}
 
 @media (min-width: 768px) {
     #personal-details-section > ul > li, #company-details-section > ul > li {
@@ -83,21 +68,11 @@ select {
     border: 1px solid #BBBCBD;
 }
 
-#personal-details-section > ul > li > *, #company-details-section > ul > li > * {
-    height: 50px;
-    width: 100%;
-}
-
-@media (min-width: 768px) {
-    #personal-details-section > ul > li > *, #company-details-section > ul > li > * {
-        height: 70px;
-    }
-}
 
 @media (min-width: 768px) {
     .selectbox .icon {
         right: 20px;
-        font-size: 12px;
+        font-size: 16px;
         line-height: 68px;
     }
 }
@@ -107,25 +82,10 @@ select {
     top: 0;
     right: 15px;
     color: #13670B;
-    font-size: 10px;
+    font-size: 16px;
     line-height: 48px;
 }
 
-[class^="icon"], [class*=" icon"] {
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.icon.arrow-head-down:before {
-    content: "\e900";
-}
 
 @media (min-width: 768px) {
     .selectbox .icon {
@@ -140,7 +100,7 @@ select {
     top: 0;
     right: 15px;
     color: #13670B;
-    font-size: 10px;
+    font-size: 16px;
     line-height: 48px;
 }
 
@@ -165,13 +125,26 @@ button, select {
     text-transform: none;
 }
 
+#firstName2,#surname2,
+#emailAddress2, #emailAddressConfirm2 {
+    width: 100%;
+    height: 70px;
+    padding: 0 20px;
+    border: 1px solid #BBBCBD;
+    color: #999999;
+    font-size: 18px;
+    line-height: 48px;
+    margin-bottom: 1rem;
+}
 
+#country {
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+}
 
-button, input, optgroup, select, textarea {
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
+#country {
+    width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -182,11 +155,6 @@ button, input, optgroup, select, textarea {
 
 .checkbox-container input {
     display: none;
-}
-
-[type="checkbox"], [type="radio"] {
-    box-sizing: border-box;
-    padding: 0;
 }
 
 .checkbox-container .checkbox {
@@ -232,10 +200,6 @@ button, input, optgroup, select, textarea {
     cursor: pointer;
 }
 
-button, input {
-    overflow: visible;
-}
-
 
 @media (max-width:600px) {
     section {
@@ -243,14 +207,4 @@ button, input {
         margin: 0 0 20px;
     }
 
-    #personal-details-section input, #company-details-section input {
-        width: 100%;
-        max-width: 600px;
-    }
-
-    #personal-details-section > ul > li, #company-details-section > ul > li {
-        margin: 10px 0 0;
-        width: 100%;
-        max-width: 378px;
-    }
 }

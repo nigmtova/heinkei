@@ -1,7 +1,5 @@
-*, *:before, *:after {
-    box-sizing: inherit;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+* {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -74,38 +72,7 @@ input[type="radio" i] {
     padding: initial;
     border: initial;
 }
-user agent stylesheet
-input {
-    text-rendering: auto;
-    color: fieldtext;
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    appearance: auto;
-    -webkit-rtl-ordering: logical;
-    cursor: text;
-    background-color: field;
-    margin: 0em;
-    padding: 1px 0px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
-    padding-block: 1px;
-    padding-inline: 2px;
-}
 
-button, input, optgroup, select, textarea {
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
-}
 
 :focus-visible {
     outline: -webkit-focus-ring-color auto 1px;
@@ -119,7 +86,7 @@ button, input, optgroup, select, textarea {
     width: 600px;
     max-width: calc(100% - 60px);
     margin: -50px auto 0;
-    padding: 50px 100px;
+    padding: 50px 50px;
     background-color: #fff;
 }
 
@@ -624,18 +591,6 @@ button, input, optgroup, select, textarea {
     font-weight: 700;
 }
 
-[class^="icon"], [class*=" icon"] {
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 .datepicker-input .icon {
     color: #13670B;
     font-size: 20px;
@@ -693,9 +648,6 @@ button, input, optgroup, select, textarea {
     margin: auto;
 }
 
-button, input {
-    overflow: visible;
-}
 
 [class^="icon"], [class*=" icon"] {
     font-family: 'icomoon' !important;
@@ -707,6 +659,10 @@ button, input {
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+#personal-details-section input {
+    width: 100%;
 }
 
 .timeslots-container input:checked ~ label {
@@ -964,6 +920,14 @@ ul {
 }
 
 @media (max-width:600px) {
+    .value {
+        color: #005D1F;
+        border: none;
+        background: transparent;
+        height: 100%;
+        font-weight: 700;
+        font-size: 16px;
+    }
     .page-title h1 {
         margin: 0 0 30px;
         font-family: "HeinekenSerif18-Bold";
@@ -1034,7 +998,7 @@ ul {
         position: relative;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         width: 100%;
         border: 1px solid #BBBCBD;
         padding: 0 5px;
@@ -1045,10 +1009,18 @@ ul {
         font-weight: 700;
     }
     .timeslots-container .item {
-        float: left;
+        /* float: left; */
         position: relative;
-        width: 45%;
-        padding: 0 0 10px 10px;
+        width: 50%;
+        padding: 5px 5px;
+    }
+
+    #next-button a {
+        color: #FFF;
+        font-family: "HeinekenSerif18-Bold";
+        font-size: 16px;
+        line-height: 50px;
+        text-decoration: none;
     }
 
     #previous-button {
@@ -1277,7 +1249,7 @@ ul {
 
 @media (min-width: 768px) {
     .timeslots-container .item {
-        width: 23%;
+        width: 25%;
     }
 }
 

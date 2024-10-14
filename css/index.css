@@ -23,3 +23,7 @@
     object-fit: cover;
     background: url(/231123_HEX_Promovideo_Final-Size16x9_720p.mp4);
 }
+
+* {
+    font-family: "HeinekenSerif",serif;
+}

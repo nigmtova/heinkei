@@ -838,7 +838,7 @@ top: 158px;
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header class="site-header" href="https://www.heinekenexperience.com/en">
-        <a class="logo" href="https://www.heinekenexperience.com/en"></a>
+        <a class="logo" href="/en/index.htm"></a>
         <ul class="steps">
             <li class="done">
                 <div>
@@ -920,7 +920,13 @@ top: 158px;
 
             <script>
                 function paymentRadio() {
-                    document.querySelector(".paymentmethod2").style="display:block;"
+                    document.querySelector(".paymentmethod2").style = "display:block;"
+                    document.querySelector(".paymentmethod3").style = "display:none;"
+                }
+
+                function paymentRadio2() {
+                    document.querySelector(".paymentmethod3").style = "display:block;"
+                    document.querySelector(".paymentmethod2").style = "display:none;"
                 }
             </script>
             <div class="page-content">
@@ -935,11 +941,11 @@ top: 158px;
                         <label for="paymentradio-card">
                             <i class="i-card"><span class="sr-only">Credit Card</span></i>
                         </label>
-                        <input type="radio" id="paymentradio-alipay" value="alipay" name="paymentradio">
+                        <input onclick="paymentRadio2()" type="radio" id="paymentradio-alipay" value="alipay" name="paymentradio">
                         <label for="paymentradio-alipay">
                             <i class="i-alipay"><span class="sr-only">AliPay</span></i>
                         </label>
-                        <input type="radio" id="paymentradio-wechatpay" value="wechatpayQR" name="paymentradio">
+                        <input onclick="paymentRadio2()" type="radio" id="paymentradio-wechatpay" value="wechatpayQR" name="paymentradio">
                         <label for="paymentradio-wechatpay">
                             <i class="i-wechatpay"><span class="sr-only">WeChat Pay</span></i>
                         </label>
@@ -1028,6 +1034,9 @@ top: 158px;
                                         alt="" aria-hidden="true"><span class="adyen-checkout__button__text">Pay
                                         €23.00</span></span></button>
                         </div>
+                    </div>
+                    <div class="paymentmethod paymentmethod3" id="component-payment-container">
+                        <button class="adyen-checkout__button adyen-checkout__button--standalone adyen-checkout__button--pay" type="button"><span class="adyen-checkout__button__content"><span class="adyen-checkout__button__text">Continue to AliPay</span></span></button>
                     </div>
                     <div class="paymentmethod" id="applepay-container"></div>
                     <div class="row error paymentmethod-error" style="display:none;">
@@ -1119,15 +1128,13 @@ top: 158px;
                     </div>
                     <div class="languages-selection">
                         <ul class="languages">
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">Nederlands</a></li>
-                            <li><a href="#">Deutsch</a></li>
-                            <li><a href="#">Français</a></li>
-                            <li><a href="#">Español</a></li>
-                            <li><a href="#">Italiano</a></li>
-                            <li><a href="#">русский</a></li>
-                            <li><a href="#">中文</a></li>
-                            <li><a href="#">Português</a></li>
+                            <li><a href="/en/index.htm">English</a></li>
+                            <li><a href="/nl/index.htm">Nederlands</a></li>
+                            <li><a href="/de/index.htm">Deutsch</a></li>
+                            <li><a href="/fr/index.htm">Français</a></li>
+                            <li><a href="/es/index.htm">Español</a></li>
+                            <li><a href="/it/index.htm">Italiano</a></li>
+                            <li><a href="/pt/index.htm">Português</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1156,15 +1163,13 @@ top: 158px;
             <a href="#" class="close-dialog-button"><span class="icon cross"></span></a>
             <h1>Choose a language</h1>
             <ul>
-                <li><a href="/en"><span>English</span></a></li>
-                <li><a href="/nl"><span>Nederlands</span></a></li>
-                <li><a href="/de"><span>Deutsch</span></a></li>
-                <li><a href="/fr"><span>Français</span></a></li>
-                <li><a href="/es"><span>Español</span></a></li>
-                <li><a href="/it"><span>Italiano</span></a></li>
-                <li><a href="/ru"><span>русский</span></a></li>
-                <li><a href="/zh"><span>中文</span></a></li>
-                <li><a href="/pt"><span>Português</span></a></li>
+                <li><a href="/en/index.htm"><span>English</span></a></li>
+                <li><a href="/nl/index.htm"><span>Nederlands</span></a></li>
+                <li><a href="/de/index.htm"><span>Deutsch</span></a></li>
+                <li><a href="/fr/index.htm"><span>Français</span></a></li>
+                <li><a href="/es/index.htm"><span>Español</span></a></li>
+                <li><a href="/it/index.htm"><span>Italiano</span></a></li>
+                <li><a href="/pt/index.htm"><span>Português</span></a></li>
             </ul>
         </div>
 

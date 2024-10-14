@@ -1,4 +1,6 @@
-<html lang="en" class="privacy-en privacy-variation-3"></html>
+<html lang="en" class="privacy-en privacy-variation-3">
+
+</html>
 
 <head>
 
@@ -838,7 +840,7 @@ top: 158px;
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header class="site-header" href="https://www.heinekenexperience.com/en">
-        <a class="logo" href="https://www.heinekenexperience.com/en"></a>
+        <a class="logo" href="/en/index.htm"></a>
         <ul class="steps">
             <li class="done">
                 <div>
@@ -874,7 +876,7 @@ top: 158px;
             </li>
         </ul>
 
-.
+        .
     </header>
     <div class="main">
         <div class="page-title">
@@ -910,19 +912,30 @@ top: 158px;
                 .paymentmethod2 {
                     display: none;
                 }
+
+                .paymentmethod3 {
+                    display: none;
+                }
+
                 #paymentInp {
                     width: 100%;
                     height: 100%;
                     font-size: 16px;
                     border: none;
                     outline: none;
-                    
+
                 }
             </style>
 
             <script>
                 function paymentRadio() {
-                    document.querySelector(".paymentmethod2").style="display:block;"
+                    document.querySelector(".paymentmethod2").style = "display:block;"
+                    document.querySelector(".paymentmethod3").style = "display:none;"
+                }
+
+                function paymentRadio2() {
+                    document.querySelector(".paymentmethod3").style = "display:block;"
+                    document.querySelector(".paymentmethod2").style = "display:none;"
                 }
             </script>
 
@@ -934,15 +947,18 @@ top: 158px;
                         <label for="paymentradio-applepay" style="display: none;">
                             <i class="i-applepay"><span class="sr-only">Apple Pay</span></i>
                         </label>
-                        <input onclick="paymentRadio()" type="radio" id="paymentradio-card" value="card" name="paymentradio">
+                        <input onclick="paymentRadio()" type="radio" id="paymentradio-card" value="card"
+                            name="paymentradio">
                         <label for="paymentradio-card">
                             <i class="i-card"><span class="sr-only">Credit Card</span></i>
                         </label>
-                        <input type="radio" id="paymentradio-alipay" value="alipay" name="paymentradio">
+                        <input onclick="paymentRadio2()" type="radio" id="paymentradio-alipay" value="alipay"
+                            name="paymentradio">
                         <label for="paymentradio-alipay">
                             <i class="i-alipay"><span class="sr-only">AliPay</span></i>
                         </label>
-                        <input type="radio" id="paymentradio-wechatpay" value="wechatpayQR" name="paymentradio">
+                        <input onclick="paymentRadio2()" type="radio" id="paymentradio-wechatpay" value="wechatpayQR"
+                            name="paymentradio">
                         <label for="paymentradio-wechatpay">
                             <i class="i-wechatpay"><span class="sr-only">WeChat Pay</span></i>
                         </label>
@@ -960,13 +976,14 @@ top: 158px;
                                         <div class="adyen-checkout__field adyen-checkout__field--cardNumber"><label
                                                 class="adyen-checkout__label"><span
                                                     class="adyen-checkout__label__text">Card number</span>
-                                                <div class="adyen-checkout__input-wrapper"><span 
+                                                <div class="adyen-checkout__input-wrapper"><span
                                                         data-cse="encryptedCardNumber"
                                                         class="adyen-checkout__input adyen-checkout__input--large adyen-checkout__card__cardNumber__input j2oksRnjgVh11hRREN03v"><img
                                                             class="LG8NPDcUMJlIVKf-vmZYS adyen-checkout__card__cardNumber__brandIcon"
                                                             alt="card"
                                                             src="https://checkoutshopper-live.adyen.com/checkoutshopper/images/logos/nocard.svg">
-                                                            <input type="number" placeholder="1234 5678 9012 3456" id="paymentInp"></span></div>
+                                                        <input type="number" placeholder="1234 5678 9012 3456"
+                                                            id="paymentInp"></span></div>
                                             </label></div>
                                         <div class="adyen-checkout__card__exp-cvc adyen-checkout__field-wrapper">
                                             <div
@@ -975,15 +992,18 @@ top: 158px;
                                                         class="adyen-checkout__label__text">Expiry date</span>
                                                     <div class="adyen-checkout__input-wrapper"><span
                                                             class="adyen-checkout__input adyen-checkout__input--small adyen-checkout__card__exp-date__input j2oksRnjgVh11hRREN03v">
-                                                                <input type="number" placeholder="00/00"id="paymentInp">
-                                                            </span></div>
-                                                </label></div>
+                                                            <input type="number" placeholder="00/00" id="paymentInp">
+                                                        </span></div>
+                                                </label>
+                                            </div>
                                             <div
                                                 class="adyen-checkout__field adyen-checkout__field--50 adyen-checkout__field__cvc adyen-checkout__field--securityCode">
                                                 <label class="adyen-checkout__label"><span
                                                         class="adyen-checkout__label__text">CVC / CVV</span>
                                                     <div class="adyen-checkout__input-wrapper">
-                                                        <span class="adyen-checkout__input adyen-checkout__input--small adyen-checkout__card__cvc__input j2oksRnjgVh11hRREN03v" data-cse="encryptedSecurityCode">
+                                                        <span
+                                                            class="adyen-checkout__input adyen-checkout__input--small adyen-checkout__card__cvc__input j2oksRnjgVh11hRREN03v"
+                                                            data-cse="encryptedSecurityCode">
                                                             <input type="number" placeholder="123" id="paymentInp">
                                                         </span>
                                                         <div
@@ -1019,9 +1039,11 @@ top: 158px;
                                                                 <rect class="adyen-checkout__card__cvc__hint__location"
                                                                     x="16.5" y="9.5" width="7" height="5" rx="2.5"
                                                                     stroke="#D10244"></rect>
-                                                            </svg></div>
+                                                            </svg>
+                                                        </div>
                                                     </div>
-                                                </label></div>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1031,6 +1053,9 @@ top: 158px;
                                         alt="" aria-hidden="true"><span class="adyen-checkout__button__text">Pay
                                         €23.00</span></span></button>
                         </div>
+                    </div>
+                    <div class="paymentmethod paymentmethod3" id="component-payment-container">
+                        <button class="adyen-checkout__button adyen-checkout__button--standalone adyen-checkout__button--pay" type="button"><span class="adyen-checkout__button__content"><span class="adyen-checkout__button__text">Continue to AliPay</span></span></button>
                     </div>
                     <div class="paymentmethod" id="applepay-container"></div>
                     <div class="row error paymentmethod-error" style="display:none;">
@@ -1050,7 +1075,8 @@ top: 158px;
             <div class="wrap">
                 <div class="footer-table">
                     <div class="cell" id="footer-logo">
-                        <a href="#"><img src="https://tickets.heinekenexperience.com/static_new/images/logo-footer.svg" alt="Heineken Experience"></a>
+                        <a href="#"><img src="https://tickets.heinekenexperience.com/static_new/images/logo-footer.svg"
+                                alt="Heineken Experience"></a>
                     </div>
                     <div class="cell">
                         <nav>
@@ -1070,8 +1096,8 @@ top: 158px;
                                 </li>
                                 <li><a href="#">Cookie Policy</a>
                                 </li>
-                                <li><a href="#"
-                                        target="_blank" rel="noopener noreferrer">Terms &amp; Conditions</a></li>
+                                <li><a href="#" target="_blank" rel="noopener noreferrer">Terms &amp; Conditions</a>
+                                </li>
                                 <li><a href="#">Heineken Company</a></li>
                             </ul>
 
@@ -1122,15 +1148,13 @@ top: 158px;
                     </div>
                     <div class="languages-selection">
                         <ul class="languages">
-                            <li><a href="#">English</a></li>
-                            <li><a href="#">Nederlands</a></li>
-                            <li><a href="#">Deutsch</a></li>
-                            <li><a href="#">Français</a></li>
-                            <li><a href="#">Español</a></li>
-                            <li><a href="#">Italiano</a></li>
-                            <li><a href="#">русский</a></li>
-                            <li><a href="#">中文</a></li>
-                            <li><a href="#">Português</a></li>
+                            <li><a href="/en/index.htm">English</a></li>
+                            <li><a href="/nl/index.htm">Nederlands</a></li>
+                            <li><a href="/de/index.htm">Deutsch</a></li>
+                            <li><a href="/fr/index.htm">Français</a></li>
+                            <li><a href="/es/index.htm">Español</a></li>
+                            <li><a href="/it/index.htm">Italiano</a></li>
+                            <li><a href="/pt/index.htm">Português</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1159,15 +1183,13 @@ top: 158px;
             <a href="#" class="close-dialog-button"><span class="icon cross"></span></a>
             <h1>Choose a language</h1>
             <ul>
-                <li><a href="/en"><span>English</span></a></li>
-                <li><a href="/nl"><span>Nederlands</span></a></li>
-                <li><a href="/de"><span>Deutsch</span></a></li>
-                <li><a href="/fr"><span>Français</span></a></li>
-                <li><a href="/es"><span>Español</span></a></li>
-                <li><a href="/it"><span>Italiano</span></a></li>
-                <li><a href="/ru"><span>русский</span></a></li>
-                <li><a href="/zh"><span>中文</span></a></li>
-                <li><a href="/pt"><span>Português</span></a></li>
+                <li><a href="/en/index.htm"><span>English</span></a></li>
+                <li><a href="/nl/index.htm"><span>Nederlands</span></a></li>
+                <li><a href="/de/index.htm"><span>Deutsch</span></a></li>
+                <li><a href="/fr/index.htm"><span>Français</span></a></li>
+                <li><a href="/es/index.htm"><span>Español</span></a></li>
+                <li><a href="/it/index.htm"><span>Italiano</span></a></li>
+                <li><a href="/pt/index.htm"><span>Português</span></a></li>
             </ul>
         </div>
 
@@ -1563,7 +1585,7 @@ top: 158px;
             </div>
         </div>
     </div>
-   
+
 
 
 
@@ -1580,7 +1602,7 @@ top: 158px;
                         class="ensToggleLabel chevron right">Functional cookies<div class="card"><input
                                 class="ensCheckbox" aria-describedby="defaultdescription" type="checkbox" name="check"
                                 disabled="" checked=""><span class="switch"></span><span class="toggle"></span></div>
-                        </label>
+                    </label>
                     <div class="description" id="defaultdescription">These cookies are required to enable core site
                         functionality</div>
                     <div class="ensTagsContent" style="opacity: .5;">
@@ -1605,13 +1627,13 @@ top: 158px;
                                         id="default--visualsponlineazurewebsitesnet-slide"
                                         name="default--visualsponlineazurewebsitesnet-slide" checked=""
                                         disabled=""><span class="switch"></span><span class="toggle"></span></div>
-                                </label></div>
+                            </label></div>
                         <div class="tagContainer"><label for="default-HEX---Tickets-ticketsheinekenexperiencecom-slide"
                                 class="ensToggleLabel">HEX - Tickets<div class="card"><input class="ensCheckbox"
                                         type="checkbox" id="default-HEX---Tickets-ticketsheinekenexperiencecom-slide"
                                         name="default-HEX---Tickets-ticketsheinekenexperiencecom-slide" checked=""
                                         disabled=""><span class="switch"></span><span class="toggle"></span></div>
-                                </label></div>
+                            </label></div>
                         <div class="tagContainer"><label for="default-Ensighten-ensightencom-slide"
                                 class="ensToggleLabel">Ensighten<div class="card"><input class="ensCheckbox"
                                         type="checkbox" id="default-Ensighten-ensightencom-slide"
@@ -1635,7 +1657,7 @@ top: 158px;
                                         type="checkbox" id="default-Video-Player-(jwpcdn|jwplatform|jwpltx)com-slide"
                                         name="default-Video-Player-(jwpcdn|jwplatform|jwpltx)com-slide" checked=""
                                         disabled=""><span class="switch"></span><span class="toggle"></span></div>
-                                </label></div>
+                            </label></div>
                         <div class="tagContainer"><label for="default-Storage-storagegoogleapiscom-slide"
                                 class="ensToggleLabel">Storage<div class="card"><input class="ensCheckbox"
                                         type="checkbox" id="default-Storage-storagegoogleapiscom-slide"
@@ -1662,7 +1684,7 @@ top: 158px;
                                         type="checkbox" id="default-Google-Tag-Manager-\googletagmanager\com-slide"
                                         name="default-Google-Tag-Manager-\googletagmanager\com-slide" checked=""
                                         disabled=""><span class="switch"></span><span class="toggle"></span></div>
-                                </label></div>
+                            </label></div>
                         <div class="tagContainer"><label
                                 for="default-Buy-Tickets-Javascript-https://wwwheinekencom/~/resources/Heineken/System/Api/HeinekenCookieCheckerjs-slide"
                                 class="ensToggleLabel">Buy Tickets Javascript<div class="card"><input
@@ -1702,7 +1724,7 @@ top: 158px;
                                         id="default-Google-Tag-Manager-Debug-tagmanagergooglecom-slide"
                                         name="default-Google-Tag-Manager-Debug-tagmanagergooglecom-slide" checked=""
                                         disabled=""><span class="switch"></span><span class="toggle"></span></div>
-                                </label></div>
+                            </label></div>
                         <div class="tagContainer"><label for="default--heinekenexperiencegt-slide"
                                 class="ensToggleLabel">heinekenexperience.gt<div class="card"><input class="ensCheckbox"
                                         type="checkbox" id="default--heinekenexperiencegt-slide"
@@ -1758,7 +1780,7 @@ top: 158px;
                                         type="checkbox" id="default-jQuery-(ajaxgoogleapiscom|codejquerycom)-slide"
                                         name="default-jQuery-(ajaxgoogleapiscom|codejquerycom)-slide" checked=""
                                         disabled=""><span class="switch"></span><span class="toggle"></span></div>
-                                </label></div>
+                            </label></div>
                         <div class="tagContainer"><label
                                 for="default-Google-Translate-\translate\google\(ru|pl|it|gr|de|co\jp|)$-slide"
                                 class="ensToggleLabel">Google Translate<div class="card"><input class="ensCheckbox"
